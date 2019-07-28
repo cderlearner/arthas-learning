@@ -13,6 +13,7 @@
         <module>arthas-demo-attach</module>
         <module>arthas-demo-test-agent</module>
         <module>arthas-learning-trace</module>
+        <module>arthas-learning-spy</module>
     </modules>
 
 
