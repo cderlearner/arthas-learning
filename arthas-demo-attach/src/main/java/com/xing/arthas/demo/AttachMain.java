@@ -14,7 +14,7 @@ public class AttachMain {
                 .getPath()
                 .replaceAll("/classes", "")
                 .replaceAll("arthas-demo-attach", "arthas-demo-test-agent")
-                .concat("arthas-demo-test-agent-1.0-SNAPSHOT-jar-with-dependencies.jar");
+                .concat("arthas-demo-test-agent-1.0-jar-with-dependencies.jar");
         //System.out.println(agentFilePath);
         String appName = "FooMain";
 

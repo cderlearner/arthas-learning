@@ -30,14 +30,9 @@ public class MathGameTransformer {
         boolean var10002 = true;
         boolean var10001 = false;
 
-        System.out.println("debug:onMethodEnter()");
         ON_BEFORE_METHOD = Spy.ON_BEFORE_METHOD;
-        System.out.println("debug:onMethodEnter() >> debug:onMethodEnter() > loadAdviceMethod()");
-
         Object[] var12 = new Object[]{new Integer(1), this.getClass().getClassLoader(), "com/xing/arthas/learning/trace/check/MathGame", "run", "()V", this, new Object[0]};
-        System.out.println("debug:onMethodEnter() >> debug:onMethodEnter() > loadAdviceMethod() >> debug:onMethodEnter() > loadAdviceMethod() > loadArrayForBefore()");
         ON_BEFORE_METHOD.invoke((Object) null, var12);
-        System.out.println("debug:onMethodEnter() >> debug:onMethodEnter() > loadAdviceMethod() >> debug:onMethodEnter() > loadAdviceMethod() > loadArrayForBefore() >> debug:onMethodEnter() > loadAdviceMethod() > loadArrayForBefore() > invokeVirtual()");
 
         boolean var7 = true;
         var10002 = false;
@@ -56,13 +51,9 @@ public class MathGameTransformer {
                 var12 = null;
                 boolean var16 = true;
                 var10003 = false;
-                System.out.println("debug:beforeInvoking()");
                 BEFORE_INVOKING_METHOD = Spy.BEFORE_INVOKING_METHOD;
-                System.out.println("debug:beforeInvoking() >> loadAdviceMethod()");
                 var10004 = new Object[]{new Integer(1), "com/xing/arthas/learning/trace/check/MathGame", "primeFactors", "(I)Ljava/util/List;", new Integer(24)};
-                System.out.println("debug:beforeInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing()");
                 BEFORE_INVOKING_METHOD.invoke((Object) null, var10004);
-                System.out.println("debug:beforeInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing() >> invokeVirtual()");
                 var10002 = true;
                 var16 = false;
                 var15 = null;
@@ -74,13 +65,9 @@ public class MathGameTransformer {
                     var9 = null;
                     var10003 = true;
                     var10002 = false;
-                    System.out.println("debug:throwInvoking()");
                     var9 = Spy.THROW_INVOKING_METHOD;
-                    System.out.println("debug:throwInvoking() >> loadAdviceMethod()");
                     var15 = new Object[]{new Integer(1), "com/xing/arthas/learning/trace/check/MathGame", "primeFactors", "(I)Ljava/util/List;", new Integer(24)};
-                    System.out.println("debug:throwInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing()");
                     var9.invoke((Object) null, var15);
-                    System.out.println("debug:throwInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing() >> invokeVirtual()");
                     var10001 = true;
                     var10003 = false;
                     var12 = null;
@@ -90,13 +77,9 @@ public class MathGameTransformer {
                 var9 = null;
                 var10003 = true;
                 var10002 = false;
-                System.out.println("debug:afterInvoking()");
                 var9 = Spy.AFTER_INVOKING_METHOD;
-                System.out.println("debug:afterInvoking() >> loadAdviceMethod()");
                 var15 = new Object[]{new Integer(1), "com/xing/arthas/learning/trace/check/MathGame", "primeFactors", "(I)Ljava/util/List;", new Integer(24)};
-                System.out.println("debug:afterInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing()");
                 var9.invoke((Object) null, var15);
-                System.out.println("debug:afterInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing() >> invokeVirtual()");
                 var10001 = true;
                 var10003 = false;
                 var12 = null;
@@ -107,13 +90,9 @@ public class MathGameTransformer {
                 var16 = true;
                 var10003 = false;
 
-                System.out.println("debug:beforeInvoking()");
                 BEFORE_INVOKING_METHOD = Spy.BEFORE_INVOKING_METHOD;
-                System.out.println("debug:beforeInvoking() >> loadAdviceMethod()");
                 var10004 = new Object[]{new Integer(1), "com/xing/arthas/learning/trace/check/MathGame", "print", "(ILjava/util/List;)V", new Integer(25)};
-                System.out.println("debug:beforeInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing()");
                 BEFORE_INVOKING_METHOD.invoke((Object) null, var10004);
-                System.out.println("debug:beforeInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing() >> invokeVirtual()");
                 var10002 = true;
                 var16 = false;
                 var15 = null;
@@ -124,13 +103,9 @@ public class MathGameTransformer {
                     var9 = null;
                     var10003 = true;
                     var10002 = false;
-                    System.out.println("debug:throwInvoking()");
                     var9 = Spy.THROW_INVOKING_METHOD;
-                    System.out.println("debug:throwInvoking() >> loadAdviceMethod()");
                     var15 = new Object[]{new Integer(1), "com/xing/arthas/learning/trace/check/MathGame", "print", "(ILjava/util/List;)V", new Integer(25)};
-                    System.out.println("debug:throwInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing()");
                     var9.invoke((Object) null, var15);
-                    System.out.println("debug:throwInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing() >> invokeVirtual()");
                     var10001 = true;
                     var10003 = false;
                     var12 = null;
@@ -140,13 +115,9 @@ public class MathGameTransformer {
                 ON_BEFORE_METHOD = null;
                 var10002 = true;
                 var10001 = false;
-                System.out.println("debug:afterInvoking()");
                 ON_BEFORE_METHOD = Spy.AFTER_INVOKING_METHOD;
-                System.out.println("debug:afterInvoking() >> loadAdviceMethod()");
                 var12 = new Object[]{new Integer(1), "com/xing/arthas/learning/trace/check/MathGame", "print", "(ILjava/util/List;)V", new Integer(25)};
-                System.out.println("debug:afterInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing()");
                 ON_BEFORE_METHOD.invoke((Object) null, var12);
-                System.out.println("debug:afterInvoking() >> loadAdviceMethod() >> loadArrayForInvokeTracing() >> invokeVirtual()");
                 var7 = true;
                 var10002 = false;
                 var9 = null;
@@ -157,14 +128,9 @@ public class MathGameTransformer {
             ON_BEFORE_METHOD = null;
             var10002 = true;
             var10001 = false;
-            System.out.println("debug:onMethodExit()");
-            System.out.println("debug:onMethodExit() >> debug:onMethodExit() > loadReturn()");
             var9 = Spy.ON_RETURN_METHOD;
-            System.out.println("debug:onMethodExit() >> debug:onMethodExit() > loadReturn() >> debug:onMethodExit() > loadReturn() > loadAdviceMethod()");
             var15 = new Object[]{null};
-            System.out.println("debug:onMethodExit() >> debug:onMethodExit() > loadReturn() >> debug:onMethodExit() > loadReturn() > loadAdviceMethod() >> debug:onMethodExit() > loadReturn() > loadAdviceMethod() > loadReturnArgs()");
             var9.invoke((Object) null, var15);
-            System.out.println("debug:onMethodExit() >> debug:onMethodExit() > loadReturn() >> debug:onMethodExit() > loadReturn() > loadAdviceMethod() >> debug:onMethodExit() > loadReturn() > loadAdviceMethod() > loadReturnArgs() >> debug:onMethodExit() > loadReturn() > loadAdviceMethod() > loadReturnArgs() > invokeVirtual()");
             var7 = true;
             var10002 = false;
             var9 = null;
@@ -172,18 +138,13 @@ public class MathGameTransformer {
             var9 = null;
             var10003 = true;
             var10002 = false;
-            System.out.println("debug:catchException()");
-            System.out.println("debug:catchException() >> debug:catchException() > loadThrow() > loadAdviceMethod()");
             BEFORE_INVOKING_METHOD = Spy.ON_THROWS_METHOD;
-            System.out.println("debug:catchException() >> debug:catchException() > loadThrow() > loadAdviceMethod() >> debug:catchException() > loadThrow() > loadAdviceMethod()");
             var10004 = new Object[]{var6};
-            System.out.println("debug:catchException() >> debug:catchException() > loadThrow() > loadAdviceMethod() >> debug:catchException() > loadThrow() > loadAdviceMethod() >> debug:catchException() > loadThrow() > loadAdviceMethod() > loadThrowArgs()");
             BEFORE_INVOKING_METHOD.invoke((Object) null, var10004);
-            System.out.println("debug:catchException() >> debug:catchException() > loadThrow() > loadAdviceMethod() >> debug:catchException() > loadThrow() > loadAdviceMethod() >> debug:catchException() > loadThrow() > loadAdviceMethod() > loadThrowArgs() >> debug:catchException() > loadThrow() > loadAdviceMethod() > loadThrowArgs() > invokeVirtual()");
             var10001 = true;
             var10003 = false;
             var12 = null;
-            throw var6;
+            //throw var6;
         }
     }
 

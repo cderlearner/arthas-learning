@@ -12,7 +12,7 @@ public class AsmCodeLock implements CodeLock, Opcodes {
     private final AdviceAdapter aa;
 
     // 锁标记
-    private boolean isLook;
+    private boolean isLook = true;
 
     // 代码块开始特征数组
     private final int[] beginCodeArray;
